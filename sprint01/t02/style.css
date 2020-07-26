@@ -1,0 +1,55 @@
+#main_table {
+	border-collapse: collapse;
+}
+td, tr {
+	text-align: center;
+	border: 2px solid #cecdd7;
+	padding: 10px;
+}
+
+.no_nord {
+	border: none;
+}
+
+.set_image {
+	align-content: center;
+	vertical-align: middle;
+}
+
+#first {
+	background-color: black;
+	color: white;
+	border: none;
+}
+
+#soul {
+	background-color: #cc944d;
+}
+
+#time {
+	background-color: #377d22;
+}
+
+#space {
+	background-color: #22568e;
+}
+
+#mind {
+	background-color: #fffd55;
+}
+
+#reality {
+	background-color: #b23835;
+}
+
+#power {
+	background-color: #7f77b2;
+}
+
+img {
+	display: block;
+	height: 140px;
+	width: 140px;
+	border-radius: 20px;
+	margin: 10px;
+}
