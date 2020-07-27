@@ -1,0 +1,56 @@
+.first {
+    position: relative;
+    float: left;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    float: left;
+    width: 270px;
+    height: 140px;
+    border-radius: 5px;
+    margin: 30px;
+    background: linear-gradient(180deg, #4568DC, #b06ab3);
+}
+
+.image {
+    height: 182px;
+    transform: scale(0.9);
+    margin-top: -33px;
+}
+
+.inside {
+    width: 200px;
+    margin-right: 10px;
+    text-align: right;
+}
+
+.desc {
+    font-size: 12px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.sub {
+    margin-top: -10px;
+    font-size: 9px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+#Iron-Man {
+    background: linear-gradient(180deg, #e52d27, #b31217);
+}
+
+#Black-Widow {
+    background: linear-gradient(90deg, #000, #61045f);
+}
+
+#Spider-Man {
+    background: linear-gradient(180deg, #e52d27, #000);
+}
+
+#Spider-img {
+    margin-top: -9px;
+}
