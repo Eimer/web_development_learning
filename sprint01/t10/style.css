@@ -1,0 +1,42 @@
+li:nth-child(3) a {
+  color: green;
+}
+
+li:nth-child(6) a {
+  color: green;
+}
+
+a::before {
+  content: "\00BB";
+  padding-right: 10px;
+}
+
+li:nth-child(5) a::after  {
+  content: " \21D2";
+  color: coral;
+  padding-right: 10px;
+}
+
+li:nth-child(3) a::after  {
+  content: " \21D2";
+  color: coral;
+  padding-right: 10px;
+}
+
+li:nth-child(7) a::before  {
+  content: "\00D7";
+  color: red;
+  padding-right: 10px;
+}
+
+li:nth-child(9) a::before  {
+  content: "\00D7";
+  color: red;
+  padding-right: 10px;
+}
+
+li:nth-child(5):hover::after  {
+  content: "\2026 last symbol is 'a'";
+  font-style: italic;
+  color: coral;
+}

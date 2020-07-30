@@ -18,11 +18,8 @@ tr td {
 
 tbody tr td {
     color: midnightblue;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
+    padding: 5px 50px 5px 50px;
+} 
 
 thead tr:first-child td {
     padding: 10px;
@@ -41,7 +38,7 @@ tbody tr:nth-child(2n + 1) td:nth-child(1){
 }
 
 .fls {
-    background-color: darkred  !important;
+    background-color: darkred !important;
     color: white;
 }
 
