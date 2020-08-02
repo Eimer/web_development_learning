@@ -1,0 +1,12 @@
+img {
+  float: left;
+  position: relative;
+  width: 30%;
+  padding-right: 10px;
+}
+
+@media print {
+  img {
+      float: none;
+  }
+}
