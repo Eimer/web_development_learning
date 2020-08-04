@@ -1,0 +1,86 @@
+.head {
+  background-color: red;
+  text-align: center;
+  width: 1000px;
+  vertical-align: middle;
+}
+
+p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 2em;
+  color: white;
+  margin: auto;
+}
+
+.lst {
+  display: flex;
+  height: 220px;
+  width: 1000px;
+  position: relative;
+  justify-content: center;
+}
+
+li {
+  background-color: rgb(206, 206, 206);
+  width: 190px;
+  height: 35px;
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  text-align: center;
+}
+
+.sec_drop {
+  position: absolute;
+  top: -1px;
+  left: 150px;
+  opacity: 0;
+  visibility: hidden;
+}
+#rel {
+  position: relative;
+}
+.first_sub {
+  position: absolute;
+  top: 100%;
+  left: -40px;
+}
+
+.first_sub > li {
+  opacity: 0;
+  visibility: hidden;
+}
+
+#rel:hover > ul > li {
+  visibility: visible;
+  opacity: 1;
+}
+
+#rel:hover {
+  background-color: red;
+}
+
+.first_sub li:hover {
+  background-color: red;
+}
+
+#sec_rel {
+  position: relative;
+}
+
+#sec_rel:hover {
+  background-color: red;
+}
+
+#sec_rel:hover > .sec_drop {
+  opacity: 1;
+  visibility: visible;
+}
+
+.sec_drop li:hover {
+  background-color: red; 
+}
+.mrg {
+  padding: 1px;
+}
