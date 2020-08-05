@@ -1,0 +1,118 @@
+.main_form {
+    border: 1px solid white;
+}
+
+label {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 0.7em;
+    color: grey;
+    margin: auto;
+    z-index: 0;
+    width: 100%;
+}
+
+.radio {
+    position: absolute;
+    top: 17px;
+    z-index: 1;
+    display: none;
+}
+
+legend {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: #D87A8A;
+}
+
+.head {
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 700;
+    color: grey;
+    width: 500px;
+    text-align: center;
+}
+
+.upper {
+    position: relative;
+    align-content: center;
+    display: flex;
+    width: 500px;
+    height: 50px;
+}
+
+.cont {
+    padding: 5px;
+    display: flex;
+    position: relative;
+    width: 140px;
+    height: 25px;
+    margin: auto;
+    border: 0.5px solid grey;
+    border-radius: 30px;
+    text-align: center;
+    z-index: 0;
+}
+
+.radio:checked + div{
+    background-color: rgb(15, 42, 82);
+}
+
+.radio:checked + div label{
+    color: white;
+}
+
+.radio:checked + div label::after{
+    content: " \2713";
+}
+
+#mid {
+    padding-left: 60px;
+    width: 390px;
+}
+
+.inp_job {
+    width: 100%;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+}
+
+.inp_name {
+    width: 230px;
+    border: none;
+    border-bottom: 0.5px solid grey;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-weight: 100;
+    margin: auto;
+}
+
+.name_mail {
+    display: flex;
+    width: 480px;
+}
+
+.last:first-child {
+    width: 200px;
+}
+
+.last:last-child {
+    width: 200px;
+    margin: auto;
+    margin-right: 0;
+}
+
+.job {
+    width: 510px;
+}
+
+.send {
+    background-color: #D87A8A;
+    font-weight: bold;
+    color: white;
+    font-family: 'Source Sans Pro', sans-serif;
+    border: none;
+    width: 512px;
+    height: 30px;
+    margin-top: 10px;
+}
