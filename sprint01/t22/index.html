@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Form</title>
+  <meta charset="utf-8">
+  <link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+  <div class="main">
+    <form action="test">
+      <div class="first">
+        <p>Typeface</p>
+        <select name="font">
+          <option value="Acunium Pro">Acunium Pro</option>
+          <option value="Comic Sans">Comic Sans</option>
+          <option value="Times New Roman">Times New Roman</option>
+        </select>
+        <p>Weight</p>
+        <label for="Regular">Regular
+          <input type="checkbox" id="Regular" class="font">
+          <span id="custom_one" class="custom_font"></span>
+        </label>
+        <label for="Bold" id="bold" >Bold
+          <input type="checkbox" id="Bold" class="font">
+          <span id="custom_two" class="custom_font"></span>
+        </label>
+        <p id="size">Size</p>
+        <input type="range" class="slider">
+        <p class="font_slide" id="first_slide">A</p>
+        <p class="font_slide" id="second_slide">A</p>
+      </div>
+      <div class="second">
+
+      </div>
+    </form>
+    <div class="tools">
+      <img src="assets/images/artistic-brush.png" alt="brush">
+      <img src="assets/images/user-icon.png" alt="brush">
+      <img src="assets/images/sms-speech-bubble.png" alt="brush">
+      <img src="assets/images/computer-screen.png" alt="brush">
+    </div>
+  </div>
+
+</body>
+
+</html>
