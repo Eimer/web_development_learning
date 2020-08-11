@@ -13,11 +13,17 @@
 
 .ball {
   position: absolute;
-  animation: jump 4s infinite;
+  animation: jump 14s infinite;
+}
+
+.ball:hover {
+  background-color: red;
+  transition: 2s;
+
 }
 
 @keyframes jump {
-  0%   { margin-left: 0; background-color: green;}
+  0%   { margin-left: 0;}
   50%  { margin-left: calc(100% - 40px); }
-  100% { margin-left: 0; background-color: red;}
+  100% { margin-left: 0;}
 }

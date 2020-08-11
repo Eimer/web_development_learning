@@ -12,7 +12,7 @@
   border-radius: 10px;
   display: grid;
   grid-template-columns: repeat(90, 100fr);
-  grid-template-rows: repeat(70, 10fr);
+  grid-template-rows: repeat(10, 10fr);
   padding: 7px;
 }
 

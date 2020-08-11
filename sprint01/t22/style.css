@@ -195,7 +195,7 @@ select + p {
 
 #switch:checked + .custom_switch {
   background-color: #2196F3;  
-}
+} 
 
 #switch:focus + .custom_switch {
   box-shadow: 0 0 1px #2196F3;

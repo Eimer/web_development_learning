@@ -21,6 +21,11 @@ p {
   justify-content: center;
 }
 
+ul {
+  list-style-image: none;
+  list-style-type: none;
+}
+
 li {
   background-color: rgb(206, 206, 206);
   width: 190px;

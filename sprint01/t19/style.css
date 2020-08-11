@@ -18,7 +18,7 @@ label {
     display: none;
 }
 
-legend {
+#legend {
     font-family: 'Source Sans Pro', sans-serif;
     font-weight: 700;
     color: #D87A8A;

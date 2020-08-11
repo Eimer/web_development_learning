@@ -14,7 +14,9 @@
 }
 span {
   font-family: 'Lato', sans-serif;
+  font-weight: bold;
   font-size: 1.5em;
+  color: white;
 }
 .img {
   margin: auto;
@@ -32,8 +34,9 @@ img {
 
 .temp span {
   font-family: 'Lato', sans-serif;
-  font-weight: bold;
+  font-weight: 400;
   font-size: 2em;
+  color: black;
 }
 
 .weather:hover {
