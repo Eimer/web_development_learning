@@ -26,7 +26,7 @@ body {
     justify-content: space-between;
     width: 100%;
     height: 700px;
-    background-color: greenyellow;
+    /* background-color: greenyellow; */
 }
 
 .developer_info {
@@ -75,7 +75,27 @@ body {
     width: 68%;
     height: 100%;
     border-radius: 10px;
-    background-color: blueviolet;
+    border: 1px solid blueviolet;
+}
+
+.list_info {
+    border: 1px solid black;
+    width: 100%;
+    height: 10%;
+}
+
+.list_content_one {
+    position: absolute;
+    width: 68%;
+    height: 625px;
+    background-color: hotpink;
+}
+
+.list_content_two {
+    position: absolute;
+    width: 68%;
+    height: 625px;
+    background-color: green;
 }
 
 .hard_skills {
@@ -122,7 +142,6 @@ body {
     width: 15px;
     height: 40px;
     background-color: #6CCA62;
-    border: 1px solid black;
     margin-bottom: 5px;
     animation: show 2s;
 }
@@ -228,7 +247,7 @@ body {
 
 .footer {
     margin-top: 10px;
-    background-color: brown;
+    border: 1px solid brown;
     width: 100%;
     height: 335px;
 }
