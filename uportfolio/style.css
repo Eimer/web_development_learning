@@ -83,7 +83,7 @@ body {
 
 .right_content > div:nth-child(n + 1) {
     position: absolute;
-    top: 531px;
+    top: 532px;
     width: 68%;
     height: 625px;
     border-radius: 10px;
@@ -97,7 +97,6 @@ body {
     width: 12%;
     color: #6CCA62;
     position: absolute;
-    font-size: 2em;
     left: 34%;
     top: 475px;
     font-size: 1.5em;
@@ -110,7 +109,6 @@ body {
     width: 12%;
     color: #6CCA62;
     position: absolute;
-    font-size: 2em;
     left: 47%;
     top: 475px;
     font-size: 1.5em;
@@ -123,7 +121,6 @@ body {
     width: 12%;
     color: #6CCA62;
     position: absolute;
-    font-size: 2em;
     left: 60%;
     top: 475px;
     font-size: 1.5em;
@@ -136,7 +133,6 @@ body {
     width: 12%;
     color: #6CCA62;
     position: absolute;
-    font-size: 2em;
     left: 73%;
     top: 475px;
     font-size: 1.5em;
@@ -158,10 +154,12 @@ body {
 
 .right_content p {
     margin: 10px;
+    
 }
 
 .right_content h2 {
     margin: 5px;
+    margin-top: 20px;
 }
 
 .list_first:hover + .list_second + .list_third + .list_fourth 
@@ -234,7 +232,7 @@ body {
 
 .slide {
     margin: auto;
-    width: 15px;
+    width: 4%;
     height: 40px;
     background-color: #6CCA62;
     margin-bottom: 5px;
@@ -346,7 +344,7 @@ body {
     background-color: white;
     border-radius: 10px;
     width: 100%;
-    height: 750px;
+    height: 615px;
 }
 
 .footer > img:first-child {
@@ -361,32 +359,108 @@ body {
     margin-top: 100px;
     margin-left: 50px;
     width: 40%;
-
 }
 
 .footer_list {
-    border: 1px solid red;
+    display: flex;
     width: 100%;
-    height: 300px;
+    height: 200px;
     float: left;
 }
 
 .first_list {
+    font-family: 'Noto Sans JP', sans-serif;
     list-style-type: none;
-    border: 1px solid blue;
-    width: 100px;
+    width: 120px;
     color: #6CCA62;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid grey;
+    border-radius: 20px;
 }
 
-.first_list > ul {
+.second_list {
+    font-family: 'Noto Sans JP', sans-serif;
+    list-style-type: none;
+    width: 120px;
+    color: #6CCA62;
+    text-align: center;
+    font-size: 1.5em;
+    border: 1px solid grey;
+    border-radius: 20px; 
+}
+
+.hidden {
     position: absolute;
-    left: 0;
-    border: 1px solid black;
-    
+    left: 41px;
+    text-align: left;
+    color: #6CCA62;
+    list-style-type: none;
+    width: 80px;
+    opacity: 0;
 }
 
-.first_list > ul:nth-child(2) {
-    margin-top: 15px;
+.hidden_two {
+    position: absolute;
+    left: 204px;
+    text-align: left;
+    color: #6CCA62;
+    list-style-type: none;
+    width: 80px;
+    opacity: 0;    
+}
+
+.hidden  li {
+    text-align: center;
+    position: absolute;
+    width: 120px;
+    left: -1px;
+    list-style-type: none;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+
+.hidden_two  li {
+    text-align: center;
+    position: absolute;
+    width: 120px;
+    left: -1px;
+    list-style-type: none;
+    border: 1px solid grey;
+    border-radius: 20px;
+}
+
+.hidden > li:nth-child(2) {
+    margin-top: 38px;
+}
+
+.hidden > li:nth-child(3) {
+    margin-top: 76px;
+}
+
+.hidden_two > li:nth-child(2) {
+    margin-top: 38px;
+}
+
+.hidden_two > li:nth-child(3) {
+    margin-top: 76px;
+}
+
+.first_list:hover > .hidden  {
+    opacity: 1;
+}
+
+.second_list:hover > .hidden_two  {
+    opacity: 1;
+}
+
+.hidden > li:hover {
+    color: grey;
+}
+
+.hidden_two > li:hover {
+    color: grey;
 }
 
 .lang:hover {
@@ -398,15 +472,29 @@ body {
 }
 
 @media screen and (max-width: 1220px) {
-    .main {
-        width: 98%;
-    }
+    .main { width: 98%; }
+    .developer_info > span:last-child { font-size: 3em; }
+    .developer_info > span { font-size: 5em; }
+    .list_first { font-size: 1em; }
+    .list_second { font-size: 1em; }
+    .list_third { font-size: 1em; }
+    .list_fourth { font-size: 1em; }
+    .list_fifth { font-size: 1em; }
+    .to_hide { visibility: hidden; }
+}
+
+@media screen and (max-width: 770px) {
+    .developer_info > span { font-size: 4em; }
+    .list_first { font-size: 0.6em; }
+    .list_second { font-size: 0.6em; }
+    .list_third { font-size: 0.6em; }
+    .list_fourth { font-size: 0.6em; }
+    .list_fifth { font-size: 0.6em; }
+    .footer > img:first-child { float: left; margin: auto};
 }
 
 @keyframes shadow {
-    100% {
-        box-shadow: 4px 0 10px rgba(0,0,0,1);
-    }
+    100% { box-shadow: 4px 0 10px rgba(0,0,0,1); }
 }
 
 @keyframes show {
