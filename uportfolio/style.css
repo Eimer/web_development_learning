@@ -339,7 +339,6 @@ body {
 }
 
 .footer {
-    display: flexbox;
     margin-top: 10px;
     background-color: white;
     border-radius: 10px;
@@ -490,7 +489,7 @@ body {
     .list_third { font-size: 0.6em; }
     .list_fourth { font-size: 0.6em; }
     .list_fifth { font-size: 0.6em; }
-    .footer > img:first-child { float: left; margin: auto};
+    .footer > img:first-child { float: left; margin: auto; }
 }
 
 @keyframes shadow {
