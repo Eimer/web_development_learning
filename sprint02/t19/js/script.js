@@ -1,15 +1,14 @@
 function checkBrackets(str) {
     let check_regular = new RegExp("[(|)]");
-    let len = str.length;
     let count_all_brack = 0;
     let count_pair = 0;
     let buffer = [];
 
-    for (let i = 0; i < len; i++)
-        buffer.push(str[i]);
-
     if (!str || !check_regular.test(str))
         return -1;
+    let len = str.length;
+    for (let i = 0; i < len; i++)
+    buffer.push(str[i]);
     for (let i = 0; i < len; i++)
         if (str[i] == ')' || str[i] == '(')
             count_all_brack++;
