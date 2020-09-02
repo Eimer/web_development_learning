@@ -5,6 +5,7 @@ let ageArr = ["53", "137", "26", "49", "48", "16", "1000", "1000", "52"];
 let attrArr = ["Name", "Strength", "Age"];
 let order = true;
 let ifNumb;
+let service = "Sorting by Name, order: ASC";
 
 function getElem(elem) {
     let getElem = document.getElementById(elem);
@@ -100,6 +101,7 @@ function sortBy(arr, secondArr, thirdArr) {
             }
         } 
     }
+
     order ? order = false: order = true;
 }
 
@@ -116,7 +118,9 @@ function reRenderTable() {
             }
         }
         contTd++;
-    }        
+    }
+    order ? service += " DESC": service += " ASC";
+    getNotif.innerHTML = service;
 }
 clearText(getElem("notification"));
 clearText(getElem("placeholder"));
@@ -125,11 +129,21 @@ createTable();
 let getSortName = getElem("sortName");
 let getSortStrength = getElem("sortStrength");
 let getSortAge = getElem("sortAge");
-let getNotif = getElem("notification");
+let getNotif = getElem("placeholder");
 
+getNotif.innerHTML = service;
+getNotif.style.width = "auto";
+getNotif.style.height = "20px";
+getNotif.style.background = "grey";
+getNotif.style.position = "absolute";
+getNotif.style.right = "10px";
+getNotif.style.top = "20px";
+getNotif.style.border = "1px solid black";
+getNotif.style.borderRadius = "20px";
+getNotif.style.padding = "10px";
 getSortName.addEventListener("click",function() { 
-    ifNumb = false; sortBy(heroesArr, strenghtArr, ageArr); reRenderTable();});
+    ifNumb = false; service = "Sorting by Name,"; sortBy(heroesArr, strenghtArr, ageArr); reRenderTable();});
 getSortStrength.addEventListener("click",function() { 
-    ifNumb = true;  sortBy(strenghtArr, heroesArr, ageArr); reRenderTable();});
+    ifNumb = true; service = "Sorting by Strengh,"; sortBy(strenghtArr, heroesArr, ageArr); reRenderTable();});
 getSortAge.addEventListener("click",function() { 
-    ifNumb = true; sortBy(ageArr, heroesArr, strenghtArr); reRenderTable();});
+    ifNumb = true; service = "Sorting by Age,"; sortBy(ageArr, heroesArr, strenghtArr); reRenderTable();});
