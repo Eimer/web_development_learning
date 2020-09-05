@@ -1,16 +1,19 @@
-// let test = document.getElementsByClassName("one-grid");
-// console.log(test[0].children[0]);
-// test[0].children[0].innerHTML = "1";
-let mark = {
-    value: "",
-    render: function(elem) {
-        elem.innerHTML = this.value;
-    },
-    clear: function(elem) {
-        this.value = "";
-        elem.innerHTML = this.value;
-    }
+//Prototype class of mark (single grid)
+class Mark {
+  constructor(elem) {
+    this.value = "";
+    this.elem = elem;
+  }
+  render(value) {
+    this.value = value;
+    this.elem.innerHTML = this.value;
+  }
+  clear() {
+    this.value = "";
+    this.elem.innerHTML = this.value;
+  }
 }
+//Object of service (count turns, restart option and other)
 let service = {
     turnsCount: 0,
     isPlayerOne: true,
@@ -27,16 +30,12 @@ let service = {
         let Turns = document.getElementsByClassName("count-turns");
         return Turns[0];
     },
-    setTurns: function() {
-        let Turns = this.getTurns();
-        Turns.innerHTML = this.turnsCount;
-    },
-    changeTurn: function() {
+    changeTurn: function () {
         this.isPlayerOne ? this.isPlayerOne = false : this.isPlayerOne = true;
         this.isPlayerTwo ? this.isPlayerTwo = false : this.isPlayerTwo = true;
         this.turnsCount++;
     },
-    clear: function() {
+    clear: function () {
         this.isPlayerOne = true;
         this.isPlayerTwo = false;
         this.turnsCount = 0;
@@ -44,16 +43,47 @@ let service = {
     render: function() {
         let playerOne = this.getPlyerOne();
         let playerTwo = this.getPlyerTwo();
-        let Turns = this.getTurns();
+        let turns = this.getTurns();
 
-        if (this.isplayerOne) {
+        if (this.isPlayerOne) {
             playerOne.style.background = "rgb(0, 160, 0)";
             playerTwo.style.background = "grey";
         }
-        else if (this.isplayerTwo){
+        else {
             playerOne.style.background = "grey";
             playerTwo.style.background = "rgb(0, 160, 0)";
         }
-        Turns.innerHTML = this.turnsCount;
+        turns.innerHTML = this.turnsCount;
+    },
+    restart: function() {
+        let btn = document.getElementsByClassName("restart-btn");
+        btn[0].addEventListener('click', function () {
+            service.clear();
+            service.render();
+        });
     }
 }
+
+service.changeTurn();
+service.render();
+service.restart();
+
+function createMarksArr() {
+  let arrayOfMarks = [];
+  let arrayOfgrids = document.getElementsByClassName("one-grid");
+
+  for (let i = 0; i < 9; i++)
+    arrayOfMarks[i] = new Mark(arrayOfgrids[i].children[0], "");
+    console.log(arrayOfMarks);
+}
+
+createMarksArr();
+
+
+// let test = document.getElementsByClassName("grids");
+// test[0].addEventListener("click", showTest);
+// console.log(test[0]);
+
+// function showTest (event) {
+//   console.log(event.target.children[0]);
+// }
