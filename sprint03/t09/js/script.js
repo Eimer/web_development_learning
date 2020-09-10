@@ -1,4 +1,3 @@
-
 let Mark = {
   value: "",
   elem: undefined,
@@ -7,7 +6,6 @@ let Mark = {
     elem.innerHTML = this.value;
   }
 }
-
 let service = {
     turnsCount: 0,
     isPlayerOne: true,
