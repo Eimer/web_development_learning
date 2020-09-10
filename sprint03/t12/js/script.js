@@ -2,6 +2,7 @@ let getAddButton = document.getElementsByClassName("add");
 let getClearButton = document.getElementsByClassName("clear");
 let getText = document.getElementById("text-area");
 let getOutArea = document.getElementById("text-out");
+let countKeys = 0;
 
 getOutArea.value = "[Empty]";
 let getInfo = () => {
@@ -11,7 +12,7 @@ let getInfo = () => {
 let setInfo = () => {
     let resultStr = "";
     let arrovStr = "--> ";
-    let coockieStr = "name=";
+
     if (!getText.value)
         alert("It's empty. Try to input something in \"Text input\".");
     else {
@@ -19,13 +20,12 @@ let setInfo = () => {
             getOutArea.value = "";
         resultStr += arrovStr + getText.value + "\n";
         getOutArea.value += resultStr;
-        coockieStr += getText.value + " ;" + "\n" + "max-age=10";
-        document.cookie += coockieStr;
-        coockieStr = "name=";
+        localStorage.setItem("name" + countKeys, getText.value);
+        countKeys++;
         resultStr = "";
         getText.value = "";
     }
-    // console.log(document.cookie);
+    // console.log(localStorage);
 }
 
 let resetInfo = () => {
@@ -35,8 +35,8 @@ let resetInfo = () => {
 let resetCookie = () => {
     let conf = confirm("Are you sure?");
     if (conf) {
-        document.cookie = "name=; max-age=0";
-        // console.log(document.cookie);
+        localStorage.clear();
+        // console.log(localStorage);
         getOutArea.value = "[Empty]";
     }
 }
