@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="df21292d-bc42-41a8-8b4c-7d72f3f9c8a0" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectId" id="1iB5DBnP6QzDPxOKp2nZDTFcxpS" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="df21292d-bc42-41a8-8b4c-7d72f3f9c8a0" name="Default Changelist" comment="" />
+      <created>1601368023602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601368023602</updated>
+      <workItem from="1601368025104" duration="2239000" />
+      <workItem from="1601445276744" duration="3018000" />
+      <workItem from="1601456566082" duration="1432000" />
+      <workItem from="1601471072859" duration="1462000" />
+      <workItem from="1601530428215" duration="1629000" />
+      <workItem from="1601535636159" duration="4125000" />
+      <workItem from="1601541113343" duration="1999000" />
+      <workItem from="1601548819155" duration="4844000" />
+      <workItem from="1601617926558" duration="2531000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1446" y="443" key="#CSS" timestamp="1601445912241">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1446" y="443" key="#CSS/0.23.2560.1341@0.23.2560.1341" timestamp="1601445912241" />
+    <state x="776" y="320" width="610" height="952" key="#HTML" timestamp="1601445900737">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="776" y="320" width="610" height="952" key="#HTML/0.23.2560.1341@0.23.2560.1341" timestamp="1601445900737" />
+    <state x="1440" y="445" key="#JavaScript" timestamp="1601445921228">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1440" y="445" key="#JavaScript/0.23.2560.1341@0.23.2560.1341" timestamp="1601445921228" />
+    <state x="1558" y="433" key="#Servers" timestamp="1601374418546">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1558" y="433" key="#Servers/0.23.2560.1341@0.23.2560.1341" timestamp="1601374418546" />
+    <state x="1175" y="338" key="SettingsEditor" timestamp="1601445695315">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1175" y="338" key="SettingsEditor/0.23.2560.1341@0.23.2560.1341" timestamp="1601445695315" />
+    <state x="1112" y="291" width="587" height="714" key="find.popup" timestamp="1601374004072">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1112" y="291" width="587" height="714" key="find.popup/0.23.2560.1341@0.23.2560.1341" timestamp="1601374004072" />
+    <state x="1503" y="331" key="run.anything.popup" timestamp="1601374316658">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1503" y="331" key="run.anything.popup/0.23.2560.1341@0.23.2560.1341" timestamp="1601374316658" />
+    <state x="1794" y="433" width="670" height="676" key="search.everywhere.popup" timestamp="1601551928042">
+      <screen x="0" y="23" width="2560" height="1341" />
+    </state>
+    <state x="1794" y="433" width="670" height="676" key="search.everywhere.popup/0.23.2560.1341@0.23.2560.1341" timestamp="1601551928042" />
+  </component>
+</project>
