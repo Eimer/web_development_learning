@@ -19,7 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="df21292d-bc42-41a8-8b4c-7d72f3f9c8a0" name="Default Changelist" comment="" />
+    <list default="true" id="df21292d-bc42-41a8-8b4c-7d72f3f9c8a0" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/t00/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/t00/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -57,7 +60,7 @@
       <workItem from="1601535636159" duration="4125000" />
       <workItem from="1601541113343" duration="1999000" />
       <workItem from="1601548819155" duration="4844000" />
-      <workItem from="1601617926558" duration="2531000" />
+      <workItem from="1601617926558" duration="3636000" />
     </task>
     <servers />
   </component>
@@ -97,10 +100,10 @@
       <screen x="0" y="23" width="2560" height="1341" />
     </state>
     <state x="1175" y="338" key="SettingsEditor/0.23.2560.1341@0.23.2560.1341" timestamp="1601445695315" />
-    <state x="1112" y="291" width="587" height="714" key="find.popup" timestamp="1601374004072">
+    <state x="1112" y="291" width="587" height="714" key="find.popup" timestamp="1601624621565">
       <screen x="0" y="23" width="2560" height="1341" />
     </state>
-    <state x="1112" y="291" width="587" height="714" key="find.popup/0.23.2560.1341@0.23.2560.1341" timestamp="1601374004072" />
+    <state x="1112" y="291" width="587" height="714" key="find.popup/0.23.2560.1341@0.23.2560.1341" timestamp="1601624621565" />
     <state x="1503" y="331" key="run.anything.popup" timestamp="1601374316658">
       <screen x="0" y="23" width="2560" height="1341" />
     </state>
