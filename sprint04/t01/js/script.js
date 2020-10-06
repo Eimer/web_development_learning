@@ -2,7 +2,6 @@
 
 import {Movie} from "./init_movies.js";
 
-
 let allMovies = new Set();
 let favoriteMovies = new Set();
 
@@ -21,8 +20,7 @@ function createAllMovies () {
     " Theorizing the quantum realm could allow time travel, they ask Stark to help them obtain the Stones from the past to\n" +
     " undo Thanos' actions in the present. Stark refuses, thinking about his wife, Pepper Potts, and daughter, Morgan, but\n" +
     " relents after musing on the death of Peter Parker. Stark, Rocket and Banner, who has since merged his intelligence with\n" +
-    " the Hulk's strength, build a time machine. Banner notes changing the past does not affect their present; any changes instead\n" +
-    " create branched alternate realities. He and Rocket visit the Asgardian refugees' new home in Norway—New Asgard—to recruit Thor",
+    " the Hulk's strength, build a time machine. Banner notes changing the past does not affect their present; any changes instead",
     ["Robert Downey Jr.", "Chris Evans", "Mark Ruffalo", "Scarlett Johansson"]));
   allMovies.add(new Movie("Inception", "https://upload.wikimedia.org/wikipedia/en/2/2e/Inception_%282010%29_theatrical_poster.jpg",
     "July 8, 2010", "Dominick \"Dom\" Cobb and Arthur are \"extractors\": they perform corporate espionage using experimental\n" +
@@ -36,15 +34,13 @@ function createAllMovies () {
     "Parker helps protect his classmates, while Beck arrives and destroys the creature. Fury meets with Parker and gives him\n" +
     " Stark's glasses, which were meant for his successor. The glasses enable him to communicate with and take command of the\n" +
     " artificial intelligence E.D.I.T.H., which has access to Stark Industries' databases and commands a large orbital weapons supply.\n" +
-    " Beck claims to hail from an alternate reality within the Multiverse, where the four Elementals killed his family and destroyed his\n" +
-    " civilization. He predicts that the Fire Elemental will appear in Prague. Parker declines Fury's invitation to join the fight and\n" +
-    "returns to his class trip.", ["Tom Holland", "Jake Gyllenhaal","Marisa Tomei", "\tJon Favreau"]));
+    " Beck claims to hail from an alternate reality within the Multiverse, where the four Elementals killed his family and destroyed his",
+    ["Tom Holland", "Jake Gyllenhaal","Marisa Tomei", "\tJon Favreau"]));
   allMovies.add(new Movie("Joker", "https://upload.wikimedia.org/wikipedia/en/e/e1/Joker_%282019_film%29_poster.jpg",
     "August 31, 2019", "In 1981, party clown and aspiring stand-up comedian Arthur Fleck lives with his mother, Penny,\n" +
     " in Gotham City. Gotham is rife with crime and unemployment, leaving swaths of the population disenfranchised and impoverished.\n" +
     " Arthur suffers from a medical disorder that causes him to laugh at inappropriate times, depending on social services for medication.\n" +
-    " After a gang of delinquents attacks Arthur in an alley, his co-worker Randall gives him a gun for protection. Arthur pursues a\n" +
-    " relationship with his neighbor, single mother Sophie Dumond, and invites her to his upcoming stand-up routine at a nightclub.",
+    " After a gang of delinquents attacks Arthur in an alley, his co-worker Randall gives him a gun for protection. Arthur pursues a",
     ["Joaquin Phoenix", "Robert De Niro", "Zazie Beetz", "Frances Conroy"]));
   allMovies.add(new Movie("The Dark Knight","https://upload.wikimedia.org/wikipedia/en/8/8a/Dark_Knight.jpg",
     "July 14, 2008","A gang of criminals robs a Gotham City mob bank, murdering each other for a higher share\n" +
@@ -54,22 +50,99 @@ function createAllMovies () {
     " Rachel Dawes—even though she and Dent are dating.", ["Christian Bale", "Heath Ledger", "Aaron Eckhart", "Michael Caine"]));
 }
 
+function changeFavorite (event) {
+  let getHeart = event.currentTarget;
+  let getHeartClass =  getHeart.getAttribute("class");
+  let getfilmName = document.getElementsByClassName("mid-film-name")[0].innerHTML;
 
-// let wick = new Movie("John Wick");
-//
-// wick.renderMovie();
-// let test_set = new Set();
-// test_set.add(wick);
-//
-// test_set.forEach(function (value) {
-//
-// })
+  if (getHeartClass == "far fa-heart") {
+    getHeart.setAttribute("class", "fas fa-heart");
+    getHeart.style.color = "red";
+    allMovies.forEach(function (value) {
+      if (value.title === getfilmName)
+        value.addToFavorites(favoriteMovies);
+    });
+  }
+  else {
+    getHeart.setAttribute("class", "far fa-heart");
+    getHeart.style.color = "black";
+    allMovies.forEach(function (value) {
+      if (value.title === getfilmName)
+        value.removeFromFavorites(favoriteMovies);
+    })
+  }
+}
+
+function renderCurrentMovie (filmName) {
+  document.getElementsByClassName("mid-content")[0].innerHTML = "";
+  document.getElementsByClassName("right-content")[0].innerHTML = "";
+  allMovies.forEach(function (value) {
+    if (value.title == filmName)
+      value.renderContentMovie();
+    })
+}
+
+function chooseFilm (event) {
+  let getMark = document.getElementsByClassName("mark");
+  if (event.target.getAttribute("class") != "left-content")
+    for (let i = 0; i < getMark.length; i++) {
+      getMark[i].style.display = "none";
+    }
+  if (event.target.getAttribute("class") === "film-name") {
+    event.target.parentNode.children[0].style.display = "block";
+    renderCurrentMovie(event.target.innerText);
+    document.getElementById("check-favorite").addEventListener("click", changeFavorite);
+  }
+  else if (event.target.getAttribute("class") === "film-node") {
+    event.target.children[0].style.display = "block";
+    renderCurrentMovie(event.target.innerText);
+    document.getElementById("check-favorite").addEventListener("click", changeFavorite);
+  }
+}
+
 createAllMovies();
 
 allMovies.forEach(function (value){
-  value.renderContentMovie();
+  value.renderMovie();
 })
 
+document.getElementsByClassName("mark")[0].style.display = "block";
+renderCurrentMovie("John Wick");
 
+document.getElementById("choose-all").addEventListener("click", function () {
+  this.style.background = "blue";
+  document.getElementById("choose-favorite").style.background = "rgb(59, 132, 209)";
+  document.getElementsByClassName("left-content")[0].innerHTML = "";
+  allMovies.forEach(function (value){
+    value.renderMovie();
+  })
+  document.getElementsByClassName("mark")[0].style.display = "block";
+  renderCurrentMovie("John Wick");
+  document.getElementById("check-favorite").addEventListener("click", changeFavorite);
+})
 
-console.log(allMovies);
+document.getElementById("choose-favorite").addEventListener("click", function () {
+  this.style.background = "blue";
+  document.getElementById("choose-all").style.background = "rgb(59, 132, 209)";
+  document.getElementsByClassName("left-content")[0].innerHTML = "";
+  document.getElementsByClassName("right-content")[0].innerHTML = "";
+  document.getElementsByClassName("mid-content")[0].innerHTML = "";
+  favoriteMovies.forEach(function (value) {
+    value.renderMovie();
+  })
+
+  let getfilmNode = document.getElementsByClassName("film-node")[0];
+    if (getfilmNode) {
+      let getFilmName = getfilmNode.children[1].innerHTML;
+      favoriteMovies.forEach(function (value) {
+        if (value.title === getFilmName) {
+          value.renderContentMovie();
+          getfilmNode.children[0].style.display = "block";
+          return;
+        }
+      })
+    }
+})
+
+document.getElementsByClassName("left-content")[0].addEventListener("click", chooseFilm);
+document.getElementById("check-favorite").addEventListener("click", changeFavorite);
