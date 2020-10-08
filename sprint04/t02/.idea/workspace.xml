@@ -19,7 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4a579089-2661-4383-8f4e-147c5e81c7f3" name="Default Changelist" comment="" />
+    <list default="true" id="4f84c25c-7a5f-4194-a1b2-c24f2b90c074" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/../t01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t01/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -28,7 +30,7 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
   </component>
-  <component name="ProjectId" id="1iJTRmOLMDkgd6XY3nwnnGVfFoJ" />
+  <component name="ProjectId" id="1iUlG0XFwFqnnOFwkfvTyEzZ25B" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -38,26 +40,25 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="4a579089-2661-4383-8f4e-147c5e81c7f3" name="Default Changelist" comment="" />
-      <created>1601624688818</created>
+      <changelist id="4f84c25c-7a5f-4194-a1b2-c24f2b90c074" name="Default Changelist" comment="" />
+      <created>1601969952180</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1601624688818</updated>
-      <workItem from="1601624690278" duration="88000" />
-      <workItem from="1601637206222" duration="362000" />
-      <workItem from="1601641704886" duration="3521000" />
-      <workItem from="1601709327672" duration="1947000" />
-      <workItem from="1601714714826" duration="1074000" />
-      <workItem from="1601730533612" duration="164000" />
-      <workItem from="1601874699966" duration="8335000" />
-      <workItem from="1601895295054" duration="6141000" />
-      <workItem from="1601961325908" duration="5058000" />
+      <updated>1601969952180</updated>
+      <workItem from="1601969954293" duration="3681000" />
+      <workItem from="1601978464055" duration="1006000" />
+      <workItem from="1601983556215" duration="3219000" />
+      <workItem from="1602048529535" duration="3252000" />
+      <workItem from="1602054173752" duration="987000" />
+      <workItem from="1602065337150" duration="3957000" />
+      <workItem from="1602136965125" duration="1683000" />
+      <workItem from="1602141083408" duration="1726000" />
+      <workItem from="1602147168559" duration="642000" />
     </task>
     <servers />
   </component>
@@ -75,11 +76,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="WindowStateProjectService">
-    <state x="1321" y="487" key="SettingsEditor" timestamp="1601641877283">
-      <screen x="0" y="23" width="2560" height="1337" />
-    </state>
-    <state x="1321" y="487" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1601641877283" />
   </component>
 </project>
