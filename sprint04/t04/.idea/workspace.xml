@@ -20,7 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ff86546d-05fd-406a-883e-0b4cc2719076" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../t01/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t01/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/classes.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/classes.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -42,6 +45,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/css" />
+      <recent name="$PROJECT_DIR$/debug" />
+      <recent name="$PROJECT_DIR$/js/debug" />
+    </key>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -51,7 +61,9 @@
       <option name="presentableId" value="Default" />
       <updated>1602154576754</updated>
       <workItem from="1602154578034" duration="1613000" />
-      <workItem from="1602160008187" duration="5155000" />
+      <workItem from="1602160008187" duration="5250000" />
+      <workItem from="1602231853762" duration="1887000" />
+      <workItem from="1602238158486" duration="7806000" />
     </task>
     <servers />
   </component>

@@ -16,7 +16,7 @@ export const magician = {
 };
 
 export let doHowl = {
-  howl : function () {
+  howl () {
     console.log("ARH-WOOOOOOOOOOOOOOOOOOOO");
   }
 }
@@ -27,7 +27,7 @@ export class Creature {
     this.age = age;
     this.species = species;
   }
-  sayHello = function () {
+  sayHello () {
     console.log(`Hello, my name is ${this.name}`);
   }
 }
@@ -38,7 +38,7 @@ export class Human extends Creature {
     this.job = job;
     this._portrait = "assets/images/human.png";
   }
-  transform = function () {
+  transform () {
 
   }
 }
@@ -52,16 +52,16 @@ export class Dog extends Creature {
 }
 
 export class Vampire extends Human {
-  constructor(name, age, species, tittle) {
-    super();
-    this.tittle = tittle;
+  constructor(name, age, species, title) {
+    super(name, age, species);
+    this.title = title;
     this._portrait = "assets/images/vampire.png";
   }
 }
 
 export class Werewolf extends Human {
   constructor(name, age, species, job) {
-    super();
+    super(name, age, species, job);
     this._portrait = "assets/images/werewolf.png";
   }
 }
