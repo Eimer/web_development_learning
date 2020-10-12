@@ -1,0 +1,22 @@
+.menu {
+  width: 500px;
+  height: 900px;
+  border: 1px solid black;
+  margin: 0 auto;
+  background: lightgray;
+  padding: 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.node {
+  width: 100%;
+  border: 1px solid red;
+}
+
+.line {
+  width: 100%;
+  border: 1px solid black;
+}
+

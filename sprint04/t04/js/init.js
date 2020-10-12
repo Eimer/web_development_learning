@@ -1,7 +1,7 @@
 "use strict"
 
 import * as _template from "./templates.js";
-import {Creature, Human, magician, Dog, Vampire, doHowl, Werewolf} from "./classes.js";
+import {Creature, Human, magician, Dog, Vampire, Werewolf} from "./classes.js";
 
 let obj;
 
@@ -25,6 +25,7 @@ function renderDoingBtns () {
   getParrentDiv.appendChild(sayHelloBtn);
   getParrentDiv.appendChild(doTranformBtn);
   getParrentDiv.appendChild(doHowlBtn);
+  document.getElementById("transform").addEventListener("click", changePerson);
 }
 
 function changeBtnStyle (currentClick) {
@@ -33,6 +34,10 @@ function changeBtnStyle (currentClick) {
     currentClick.setAttribute("class", "protoBtn active");
     activeBtn.className = "protoBtn";
   }
+}
+
+function doHowl (event) {
+  obj.howl();
 }
 
 function doHello (event) {
@@ -44,9 +49,9 @@ function doMagic (event) {
 }
 
 function doFunc (obj) {
-  document.getElementById("magic").removeEventListener("click", doMagic);
   document.getElementById("magic").addEventListener("click", doMagic);
   document.getElementById("hello").addEventListener("click", doHello);
+  document.getElementById("howl").addEventListener("click", doHowl);
 }
 
 function createProperty (key, value, parent) {
@@ -89,7 +94,6 @@ window.changeStatus = (button) => {
       obj = new Human("Linda", 22, "human", "doctor");
       Object.setPrototypeOf(magician, obj);
       renderProper(obj);
-      document.getElementById("transform").addEventListener("click", changePerson);
       break;
     case "vampire prototype":
       renderDoingBtns ();
@@ -113,11 +117,10 @@ window.changeStatus = (button) => {
       renderDoingBtns ();
       document.getElementById("hello").style.visibility = "visible";
       document.getElementById("transform").style.visibility = "visible";
-      document.getElementById("howl").style.visibility = "hidden";
-      obj = new Human("Linda", 22, "human", "doctor");
+      document.getElementById("howl").style.visibility = "visible";
+      obj = new Werewolf("Linda", 22, "werewolf", "doctor");
       Object.setPrototypeOf(magician, obj);
       renderProper(obj);
-      document.getElementById("transform").addEventListener("click", changePerson);
       break;
     default:
       renderDoingBtns();
@@ -131,7 +134,6 @@ window.changeStatus = (button) => {
 }
 
 function changePerson (event) {
-  console.log("test");
   if (magician._getPortrait() == "assets/images/human.png") {
     renderDoingBtns ();
     document.getElementById("hello").style.visibility = "visible";
@@ -142,6 +144,17 @@ function changePerson (event) {
     renderProper(obj);
     document.getElementById("head").setAttribute("src", magician._getPortrait());
   }
+  else {
+    renderDoingBtns ();
+    document.getElementById("hello").style.visibility = "visible";
+    document.getElementById("transform").style.visibility = "visible";
+    document.getElementById("howl").style.visibility = "hidden";
+    obj = new Human("Linda", 22, "human", "doctor");
+    Object.setPrototypeOf(magician, obj);
+    renderProper(obj);
+    document.getElementById("head").setAttribute("src", magician._getPortrait());
+  }
+  doFunc(obj);
 }
 
 renderDoingBtns();

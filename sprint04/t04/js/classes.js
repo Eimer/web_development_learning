@@ -27,7 +27,7 @@ export class Creature {
     this.age = age;
     this.species = species;
   }
-  sayHello () {
+  ['say hello'] () {
     console.log(`Hello, my name is ${this.name}`);
   }
 }
@@ -65,3 +65,5 @@ export class Werewolf extends Human {
     this._portrait = "assets/images/werewolf.png";
   }
 }
+
+Object.assign(Werewolf.prototype, doHowl);
