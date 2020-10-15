@@ -1,0 +1,131 @@
+body {
+  background: darkgray;
+}
+
+.main-content {
+  width: 300px;
+  height: 500px;
+  background: grey;
+  margin: 0 auto;
+  border: 2px solid white;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.tittle {
+  box-sizing: border-box;
+  width: 99.9%;
+  height: 50px;
+  background: red;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  text-align: center;
+  font-size: 2em;
+  font-weight: bold;
+  color: white;
+}
+
+.type-message {
+  display: flex;
+  justify-content: space-around;
+  height: 30px;
+  background: white;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.message {
+  box-sizing: border-box;
+  width: 90%;
+  height: 100%;
+  border-radius: 10px;
+  border: none;
+  outline: none;
+}
+
+.send {
+  box-sizing: border-box;
+  width: 10%;
+  outline: none;
+  border: none;
+  border-bottom-right-radius: 10px;
+  font-size: 1.5em;
+}
+
+.send:active {
+  background: lightgray;
+}
+
+.send:hover {
+  box-shadow: 0 0 2px rgba(0,0,0,0.5);
+}
+
+.main-chat {
+  overflow: auto;
+  box-sizing: border-box;
+  background: lightgray;
+  height: 100%;
+  width: 99.8%;
+}
+
+.message-block {
+  position: relative;
+  padding: 5px;
+  width: 100%;
+  /*border: 2px solid black;*/
+}
+
+.sender {
+  padding: 5px;
+  box-sizing: border-box;
+  margin-left: 15px;
+  height: 100%;
+  width: max-content;
+  max-width: 92%;
+  background: white;
+  border-radius: 10px;
+  min-height: 30px;
+  min-width: 10%;
+}
+
+.receiver {
+  padding: 5px;
+  box-sizing: border-box;
+  margin-right: 15px;
+  margin-left: auto;
+  height: 100%;
+  width: max-content;
+  min-width: 10%;
+  max-width: 92%;
+  min-height: 30px;
+  background: white;
+  border-radius: 10px;
+  background: darkred;
+  color: white;
+}
+
+.receiver:after {
+  top: 30%;
+  right: 12px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-left: 10px solid darkred;
+  border-bottom: 5px solid transparent;
+}
+
+.sender:before {
+  top: 30%;
+  left: 10px;
+  position: absolute;
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 5px solid transparent;
+  border-right: 10px solid white;
+  border-bottom: 5px solid transparent;
+}

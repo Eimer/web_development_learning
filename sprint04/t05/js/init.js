@@ -19,6 +19,17 @@ desertsMap.set("Fruit Salad", 3.99);
 drinksMap.set("Lemonade", 3.20);
 drinksMap.set("Green Tea", 1.50);
 drinksMap.set("Coffee", 1.99);
-menuMap.set(saladsMap).set(mainDishesMap).set(desertsMap).set(drinksMap);
+menuMap.set("salads", saladsMap).set("dishes", mainDishesMap).set("deserts", desertsMap).set("drinks", drinksMap);
 
-console.log(menuMap);
+menuMap.forEach(function (value, key) {
+  let nodeDiv = _template.createAddElem("div", "node", "", ".menu");
+  let categoryDiv = _template.createAddElem("span", "category", key, nodeDiv);
+  _template.createAddElem("br", undefined, "", nodeDiv);
+  _template.createAddElem("div", "line", "", nodeDiv);
+  value.forEach(function (value, key) {
+    // console.log(key);
+    _template.createAddElem("span", "name", key, nodeDiv);
+    _template.createAddElem("span", "price", '$' + value, nodeDiv);
+    _template.createAddElem("br", undefined, "", nodeDiv);
+  })
+})
