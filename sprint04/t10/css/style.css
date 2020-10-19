@@ -1,0 +1,43 @@
+body {
+  background: grey;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: row;
+  padding: 10px;
+  margin: 0 auto;
+  min-width: 900px;
+  width: max-content;
+  background: lightgray;
+}
+
+.searchInp {
+  width: 30%;
+  height: 25px;
+}
+
+.searchBtn {
+  width: 15%;
+  height: 25px;
+}
+
+.heroesBlock {
+  border: 1px solid red;
+  height: 100px;  /*TEST HEIGHT*/
+}
+
+.graphicBlock {
+  border: 1px solid blue;
+  height: 100px;  /*TEST HEIGHT*/
+}
+
+.interfaceBlock {
+  width: 75%;
+  border: 1px solid green;
+}
+
+.propertiesBlock {
+  border: 1px solid yellow;
+  width: 25%;
+}
