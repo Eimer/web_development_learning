@@ -1,0 +1,23 @@
+body {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 100px 100px 100px;
+}
+
+.service {
+  width: 250px;
+  position: fixed;
+  right: 0;
+  background: blue;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 1.5em;
+  padding: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 20px;
+}
