@@ -1,0 +1,51 @@
+.main {
+  display: flex;
+  height: auto;
+  width: 750px;
+  margin: 0 auto;
+}
+
+h1 {
+  text-align: center;
+}
+.weather {
+  width: 100px;
+  height: 175px;
+  margin: auto;
+  border: 1px solid grey;
+}
+.date {
+  text-align: center;
+  background-color: rgb(75, 163, 207);
+}
+span {
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  font-size: 1.5em;
+  color: white;
+}
+.img {
+  margin: auto;
+  margin-top: 5px;
+}
+img {
+  margin-left: auto;
+  margin-right: auto;
+  width: 100px;
+  height: 100px;
+}
+.temp {
+  text-align: center;
+  background: lightgray;
+}
+
+.temp span {
+  font-family: 'Lato', sans-serif;
+  font-weight: 400;
+  font-size: 2em;
+  color: black;
+}
+
+.weather:hover {
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
+}
