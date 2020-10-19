@@ -20,7 +20,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce6f4905-4078-4849-a45a-89a1fc7e2879" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../t06/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../t06/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,6 +41,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -55,6 +57,8 @@
       <workItem from="1602831791861" duration="2639000" />
       <workItem from="1602840355767" duration="382000" />
       <workItem from="1602851477860" duration="650000" />
+      <workItem from="1603084950747" duration="926000" />
+      <workItem from="1603088468098" duration="2164000" />
     </task>
     <servers />
   </component>
@@ -72,5 +76,15 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="247" y="300" key="SettingsEditor" timestamp="1603085478748">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="247" y="300" key="SettingsEditor/0.23.2560.1337@0.23.2560.1337" timestamp="1603085478748" />
+    <state x="1303" y="321" width="670" height="676" key="search.everywhere.popup" timestamp="1603085168527">
+      <screen x="0" y="23" width="2560" height="1337" />
+    </state>
+    <state x="1303" y="321" width="670" height="676" key="search.everywhere.popup/0.23.2560.1337@0.23.2560.1337" timestamp="1603085168527" />
   </component>
 </project>

@@ -8,16 +8,25 @@ let user= {
 
 // Don't edit above this line
 
-let regExpName = /\s[a-zA-Z]/
-let regExpName1 = /^[a-zA-Z]/
-let regExpAge = /^\d+$/
+let regExpName = /\s[a-zA-Z]/;
+let regExpName1 = /^[a-zA-Z]/;
+let regExpAge = /^[1-9]/;
+let regExpAge1 = /^[0-9]*$/;
+let regEmail = /^([a-z0-9_-]+\.)*[a-z0-9_-]+@[a-z0-9_-]+(\.[a-z0-9_-]+)*\.[a-z]{2,6}$/;
+let ageBefore = document.getElementById("age").value;
+let emailBefore = document.getElementById("email").value;
+
 user = new Proxy(user, {
   get(target, p, receiver) {
+    console.log(ageBefore);
     if (target[p] != "") {
       target.name = target.name.trim().toLowerCase().replace(regExpName, m => m.toUpperCase()).replace(regExpName1, m => m.toUpperCase());
-
+        if (target.age.search(regExpAge) == -1 || target.age.search(regExpAge1) == -1) {
+          target.age = ageBefore;
+        }
+        if (target.email.search(regEmail) == -1)
+          target.email = emailBefore;
     }
-    console.log(target[p]);
     return target[p];
   }
 })
