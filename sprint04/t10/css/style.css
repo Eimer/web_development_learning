@@ -22,22 +22,57 @@ body {
   height: 25px;
 }
 
-.heroesBlock {
-  border: 1px solid red;
-  height: 100px;  /*TEST HEIGHT*/
+#heroesBlock {
+  height: max-content;
+  margin-top: 10px;
 }
 
-.graphicBlock {
-  border: 1px solid blue;
-  height: 100px;  /*TEST HEIGHT*/
+#graphicBlock {
+
 }
 
 .interfaceBlock {
   width: 75%;
-  border: 1px solid green;
 }
 
-.propertiesBlock {
-  border: 1px solid yellow;
+#propertiesBlock {
   width: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.singleHero {
+  border: 1px solid black;
+  background: white;
+  border-radius: 4px;
+  width: max-content;
+  min-width: 200px;
+  height: max-content;
+  padding: 5px;
+  text-align: center;
+  user-select: none;
+}
+
+.displayStats {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.property {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 10px;
+  background: grey;
+  border: 1px solid black;
+  height: 50px;
+  border-radius: 10px;
+  font-size: 1.5em;
+}
+
+.property > span {
+  margin: 0 auto;
 }

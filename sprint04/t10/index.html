@@ -21,23 +21,30 @@
     <span>Once you selected all the heroes you want to compare, click "Compare"</span>
   </div><br>
     <div class="searchBlock">
-      <input type="text" class="searchInp">
-      <input type="button" value="SEARCH" class="searchBtn">
-      <input type="button" value="RANDOM" class="searchBtn">
-      <input type="button" value="COMPARE 0" class="searchBtn">
+      <input type="text" class="searchInp" id="inputSearch">
+      <input type="button" value="SEARCH" class="searchBtn" id="search">
+      <input type="button" value="RANDOM" class="searchBtn" id="random">
+      <input type="button" value="COMPARE 0" class="searchBtn" id="compare">
     </div>
-    <div class="heroesBlock">
-
+    <div id="heroesBlock"></div>
+    <div id="graphicBlock"></div>
     </div>
-    <div class="graphicBlock">
-
-    </div>
-    </div>
-    <div class="propertiesBlock">
-
+    <div id="propertiesBlock">
+<!--      <div class="displayStats">-->
+<!--        <span>Compare stats</span>-->
+<!--        <div class="property">-->
+<!--          <span>Intelligence</span>-->
+<!--        </div>-->
+<!--        <div class="property">-->
+<!--          <span>Power</span>-->
+<!--        </div>-->
+<!--        <div class="property">-->
+<!--          <span>Speed</span>-->
+<!--        </div>-->
+<!--      </div>-->
     </div>
   </div>
-
+  <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
   <script src="js/script.js"></script>
 </body>
 

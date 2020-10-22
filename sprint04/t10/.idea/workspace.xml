@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="9a234c5d-4e58-4997-9876-4b62cd33019c" name="Default Changelist" comment="" />
+    <list default="true" id="9a234c5d-4e58-4997-9876-4b62cd33019c" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/script.js" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,6 +36,19 @@
       <option name="presentableId" value="Default" />
       <updated>1603120350310</updated>
       <workItem from="1603120360438" duration="1503000" />
+      <workItem from="1603171285222" duration="262000" />
+      <workItem from="1603187938728" duration="1945000" />
+      <workItem from="1603197510084" duration="1101000" />
+      <workItem from="1603207707669" duration="340000" />
+      <workItem from="1603264547569" duration="2601000" />
+      <workItem from="1603274120434" duration="982000" />
+      <workItem from="1603279093678" duration="1084000" />
+      <workItem from="1603288536429" duration="3488000" />
+      <workItem from="1603344066115" duration="1684000" />
+      <workItem from="1603351795834" duration="28000" />
+      <workItem from="1603355241273" duration="189000" />
+      <workItem from="1603358788457" duration="909000" />
+      <workItem from="1603368985190" duration="413000" />
     </task>
     <servers />
   </component>
