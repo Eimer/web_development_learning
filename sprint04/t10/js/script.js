@@ -83,8 +83,12 @@ function addToCompare (event) {
     removedElem = event.target.parentElement;
   }
   for (let i = 0; heroesBlock.childNodes[i]; i++) {
-    if (removedElem === heroesBlock.childNodes[i])
-      compareHeroArr.push(heroArr[i]);
+    if (removedElem === heroesBlock.childNodes[i]) {
+      heroArr.map(function (item) {
+        if (item.fullName === removedElem.children[2].innerHTML)
+          compareHeroArr.push(item);
+      });
+    }
   }
   if (removedElem)
     removedElem.remove();
@@ -118,7 +122,6 @@ function searchHero (url, getInputName, ifRandom) {
   heroArr = [];
   $.getJSON(url + getInputName, function (superheroes) {
     let getRes;
-    console.log(superheroes);
     if (superheroes.response === "success") {
       if (!ifRandom) {
         getRes = superheroes.results;
@@ -142,25 +145,20 @@ function searchHero (url, getInputName, ifRandom) {
 function drawChart() {
   let graphArr = [];
   let subArr = [];
+  let headersArr = ['Heroes', 'Intelligence', 'Power', 'Speed'];
+
+  graphArr.push(headersArr);
   compareHeroArr.map(function (item) {
     subArr = [];
     subArr.push(item.name);
-    subArr.push(item.intelligence);
-    subArr.push(item.power);
-    subArr.push(item.speed);
+    subArr.push(+item.intelligence);
+    subArr.push(+item.power);
+    subArr.push(+item.speed);
     graphArr.push(subArr);
   })
 
-  console.log(graphArr);
   var data = google.visualization.arrayToDataTable(
-  [
-    ['Heroes', 'Intelligence', 'Power', 'Speed'],
-    ['2014', 1000, 400, 200],
-    ['2015', 1170, 460, 250],
-    ['2016', 660, 1120, 300],
-    ['2017', 1030, 540, 350]
-  ]);
-  console.log(data);
+    graphArr);
   var options = {
     chart: {
       title: 'Compare heroes',
